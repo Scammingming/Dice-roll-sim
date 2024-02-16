@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1><b>Dice Simulator</b></h1>
+    <hr />
+    <h2><b>Choose a simulation option</b></h2>
+    <select name="simSelect" id="dice">
+      <option value="once">Roll dice once</option>
+      <option value="five">Roll dice five times</option>
+      <option value="xtimes">Roll dice X amount of times</option>
+      <option value="snake">Roll dice till Snake Eyes</option>
+      <option value="choice">Roll dice till X</option>
+    </select>
+    <select name="dicenum" id="diceside">
+      <!--values need to be (number - 1)-->
+      <option value="3">D4</option>
+      <option value="5">D6</option>
+      <option value="7">D8</option>
+      <option value="9">D10</option>
+      <option value="19">D20</option>
+    </select>
+
+    <br />
+    <button id="rollbtn"><b>ROLL</b></button>
+    <button id="resetbtn"><b>RESET</b></button>
+    <button id="anibtn"><b>STOP ANIMATION</b></button>
+    <div id="imgSection">
+      <img src="images/0.png" alt="" id="img1" />
+      <img src="images/0.png" alt="" id="img2" />
+    </div>
+    <div id="diceBox">
+      <h3><b>Dice Rolls</b></h3>
+      <p id="diceCounter"></p>
+    </div>
+  </body>
+</html>

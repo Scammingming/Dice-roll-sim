@@ -1,0 +1,58 @@
+html {
+  background-color: purple;
+}
+
+body {
+  background-color: #6260d2;
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  padding: 50px 100px;
+}
+#imgSection {
+  background-color: black;
+}
+
+#imgSection,
+#diceBox {
+  border: solid purple 2px;
+  padding: 30px;
+  margin: 50px;
+  width: 400px;
+  margin-left: 20px;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  transition-duration: 0.5s;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: purple;
+}
+
+img {
+  width: 150px;
+  transform: rotate(0);
+  margin: 10px;
+}
+
+select {
+  padding: 5px 15px;
+  font-size: large;
+  text-align: center;
+}
+
+span {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 3px;
+  display: inline-block;
+}
