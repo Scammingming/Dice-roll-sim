@@ -88,25 +88,39 @@ function reset() {
 
   clearInterval(animation2);
   animation2 = setInterval(ani2, 100);
+
+  clearInterval(picture1);
+  picture1 = setInterval(pic1, 250);
+
+  clearInterval(picture2);
+  picture2 = setInterval(pic2, 250);
 }
 
 animation1 = setInterval(ani1, 100);
+picture1 = setInterval(pic1, 250);
 animation2 = setInterval(ani2, 100);
+picture2 = setInterval(pic2, 250);
 
 function ani1() {
-  let delta1 = Math.round(Math.random() * sidemenu.value + 1);
-  if (animate == 0) {
-    img1.src = `images/${delta1}.png`;
-  }
   img1.style.transform = `rotate(${angle1}deg)`;
   angle1 += 17;
 }
 
-function ani2() {
+function pic1() {
+  let delta1 = Math.round(Math.random() * sidemenu.value + 1);
+  if (animate == 0) {
+    img1.src = `images/${delta1}.png`;
+  }
+}
+
+function pic2() {
   let delta2 = Math.round(Math.random() * sidemenu.value + 1);
   if (animate == 0) {
     img2.src = `images/${delta2}.png`;
   }
+}
+
+function ani2() {
   img2.style.transform = `rotate(${angle2}deg)`;
   angle2 -= 15;
 }
@@ -114,6 +128,8 @@ function ani2() {
 function stopani() {
   clearInterval(animation1);
   clearInterval(animation2);
+  clearInterval(picture1);
+  clearInterval(picture2);
   img1.style.transform = `rotate(${0}deg)`;
   img2.style.transform = `rotate(${0}deg)`;
 }
